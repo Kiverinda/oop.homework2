@@ -8,23 +8,23 @@ namespace Learning.oop.homework2
         {
             BankAccount bankAccount = new BankAccount();
 
-            Console.WriteLine($"AccountNumber = {bankAccount.GetAccountNumber()}; AccountType = {bankAccount.GetAccountType()}; " +
-                $"AccountBalance = {bankAccount.GetAccountBalance()}");
+            Console.WriteLine($"AccountNumber = {bankAccount.AccountNumber}; AccountType = {bankAccount.AccountType}; " +
+                $"AccountBalance = {bankAccount.AccountBalance}");
 
             BankAccount bankAccountWithBalance = new BankAccount(123456);
 
-            Console.WriteLine($"AccountNumber = {bankAccountWithBalance.GetAccountNumber()}; AccountType = {bankAccountWithBalance.GetAccountType()}; " +
-                $"AccountBalance = {bankAccountWithBalance.GetAccountBalance()}");
+            Console.WriteLine($"AccountNumber = {bankAccountWithBalance.AccountNumber}; AccountType = {bankAccountWithBalance.AccountType}; " +
+                $"AccountBalance = {bankAccountWithBalance.AccountBalance}");
 
             BankAccount bankAccountWithType = new BankAccount(TypeAccountEnum.Company);
 
-            Console.WriteLine($"AccountNumber = {bankAccountWithType.GetAccountNumber()}; AccountType = {bankAccountWithType.GetAccountType()}; " +
-                $"AccountBalance = {bankAccountWithType.GetAccountBalance()}");
+            Console.WriteLine($"AccountNumber = {bankAccountWithType.AccountNumber}; AccountType = {bankAccountWithType.AccountType}; " +
+                $"AccountBalance = {bankAccountWithType.AccountBalance}");
 
             BankAccount bankAccountWithBalanceAndType = new BankAccount(123456, TypeAccountEnum.Company);
 
-            Console.WriteLine($"AccountNumber = {bankAccountWithBalanceAndType.GetAccountNumber()}; AccountType = {bankAccountWithBalanceAndType.GetAccountType()}; " +
-                $"AccountBalance = {bankAccountWithBalanceAndType.GetAccountBalance()}");
+            Console.WriteLine($"AccountNumber = {bankAccountWithBalanceAndType.AccountNumber}; AccountType = {bankAccountWithBalanceAndType.AccountType}; " +
+                $"AccountBalance = {bankAccountWithBalanceAndType.AccountBalance}");
         }
     }
 }

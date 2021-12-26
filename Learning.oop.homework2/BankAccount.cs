@@ -28,9 +28,19 @@
             _accountType = accountType;
         }
 
-        public int GetAccountNumber() { return _accountNmber; }
-        public decimal GetAccountBalance() { return _accountBalance; }
-        public TypeAccountEnum GetAccountType() { return _accountType; }
+        public int AccountNumber { 
+            get => _accountNmber;
+            set { _accountNmber = value; }
+        }
+        public decimal AccountBalance {
+            get => _accountBalance;
+            set { _accountBalance = value; }
+        }
+        public TypeAccountEnum AccountType
+        {
+            get => _accountType;
+            set { _accountType = value; }
+        }
 
         private int SetAccountNumber() { return _countAccount++; }
     }
