@@ -8,8 +8,8 @@ namespace Learning.oop.homework2
         {
             BankAccount bankAccount = new BankAccount();
 
+            bankAccount.SetAccountNumber();
             bankAccount.SetAccountBalance(100000000);
-            bankAccount.SetAccountNumber(1);
             bankAccount.SetAccountType(TypeAccountEnum.Personal);
 
             Console.WriteLine($"AccountNumber = {bankAccount.GetAccountNumber()}; AccountType = {bankAccount.GetAccountType()}; " +
