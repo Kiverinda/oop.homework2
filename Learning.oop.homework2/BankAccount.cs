@@ -3,7 +3,7 @@
     internal class BankAccount
     {
         private int _accountNmber;
-        private decimal _acccountBalance;
+        private decimal _accountBalance;
         private TypeAccountEnum _accountType;
         private static int _countAccount;
 
@@ -12,10 +12,24 @@
             _accountNmber = SetAccountNumber();
         }
 
-        public void SetAccountBalance(decimal value) { _acccountBalance = value; }
-        public void SetAccountType(TypeAccountEnum value) { _accountType = value; }
+        public BankAccount(decimal accountBalance) : this()
+        {
+            _accountBalance = accountBalance;
+        }
+
+        public BankAccount(TypeAccountEnum accountType) : this()
+        {
+            _accountType = accountType;
+        }
+
+        public BankAccount(decimal accountBalance, TypeAccountEnum accountType) : this()
+        {
+            _accountBalance = accountBalance;
+            _accountType = accountType;
+        }
+
         public int GetAccountNumber() { return _accountNmber; }
-        public decimal GetAccountBalance() { return _acccountBalance; }
+        public decimal GetAccountBalance() { return _accountBalance; }
         public TypeAccountEnum GetAccountType() { return _accountType; }
 
         private int SetAccountNumber() { return _countAccount++; }
