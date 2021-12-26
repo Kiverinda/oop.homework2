@@ -6,7 +6,14 @@ namespace Learning.oop.homework2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BankAccount bankAccount = new BankAccount();
+
+            bankAccount.SetAccountBalance(100000000);
+            bankAccount.SetAccountNumber(1);
+            bankAccount.SetAccountType(TypeAccountEnum.Personal);
+
+            Console.WriteLine($"AccountNumber = {bankAccount.GetAccountNumber()}; AccountType = {bankAccount.GetAccountType()}; " +
+                $"AccountBalance = {bankAccount.GetAccountBalance()}");
         }
     }
 }
